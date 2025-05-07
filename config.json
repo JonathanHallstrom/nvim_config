@@ -1,0 +1,150 @@
+{
+    "resign": {
+        "move_count": 1,
+        "score": 0,
+        "twosided": false,
+        "enabled": false
+    },
+    "draw": {
+        "move_number": 0,
+        "move_count": 1,
+        "score": 0,
+        "enabled": false
+    },
+    "maxmoves": {
+        "move_count": 1,
+        "enabled": false
+    },
+    "opening": {
+        "file": "/home/jonathanhallstrom/Downloads/UHO_4060_v2.epd",
+        "format": 0,
+        "order": 1,
+        "plies": -1,
+        "start": 1
+    },
+    "pgn": {
+        "event_name": "Fastchess Tournament",
+        "site": "?",
+        "file": "",
+        "notation": 0,
+        "track_nodes": false,
+        "track_seldepth": false,
+        "track_nps": false,
+        "track_hashfull": false,
+        "track_tbhits": false,
+        "track_timeleft": false,
+        "track_latency": false,
+        "min": false
+    },
+    "epd": {
+        "file": ""
+    },
+    "sprt": {
+        "alpha": 0.0,
+        "beta": 0.0,
+        "elo0": 0.0,
+        "elo1": 0.0,
+        "model": "normalized",
+        "enabled": false
+    },
+    "config_name": "",
+    "output": 0,
+    "seed": 6770561404311645652,
+    "variant": 0,
+    "ratinginterval": 10,
+    "scoreinterval": 1,
+    "wait": 0,
+    "autosaveinterval": 20,
+    "games": 2,
+    "rounds": 128,
+    "concurrency": 24,
+    "force_concurrency": false,
+    "recover": false,
+    "noswap": false,
+    "reverse": false,
+    "report_penta": true,
+    "affinity": false,
+    "show_latency": false,
+    "log": {
+        "file": "",
+        "level": 2,
+        "compress": false,
+        "realtime": true
+    },
+    "engines": [
+        {
+            "name": "stash36",
+            "dir": "",
+            "cmd": "/home/jonathanhallstrom/Downloads/stash-36.0-linux-x86_64-bmi2",
+            "args": "",
+            "restart": false,
+            "options": [
+                [
+                    "Hash",
+                    "128"
+                ]
+            ],
+            "limit": {
+                "tc": {
+                    "increment": 100,
+                    "fixed_time": 0,
+                    "time": 10000,
+                    "moves": 0,
+                    "timemargin": 0
+                },
+                "nodes": 0,
+                "plies": 0
+            },
+            "variant": 0
+        },
+        {
+            "name": "pawnocchio_dev",
+            "dir": "",
+            "cmd": "/home/jonathanhallstrom/dev/zig/pawnocchio/dev",
+            "args": "",
+            "restart": false,
+            "options": [
+                [
+                    "Hash",
+                    "128"
+                ]
+            ],
+            "limit": {
+                "tc": {
+                    "increment": 100,
+                    "fixed_time": 0,
+                    "time": 10000,
+                    "moves": 0,
+                    "timemargin": 0
+                },
+                "nodes": 0,
+                "plies": 0
+            },
+            "variant": 0
+        }
+    ],
+    "stats": {
+        "pawnocchio_dev vs stash36": {
+            "wins": 15,
+            "losses": 8,
+            "draws": 9,
+            "penta_WW": 1,
+            "penta_WD": 6,
+            "penta_WL": 7,
+            "penta_DD": 1,
+            "penta_LD": 1,
+            "penta_LL": 0
+        },
+        "stash36 vs pawnocchio_dev": {
+            "wins": 6,
+            "losses": 8,
+            "draws": 10,
+            "penta_WW": 0,
+            "penta_WD": 4,
+            "penta_WL": 2,
+            "penta_DD": 1,
+            "penta_LD": 4,
+            "penta_LL": 1
+        }
+    }
+}
